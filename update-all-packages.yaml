@@ -2,7 +2,7 @@
 - name: update all packages
   hosts: all
   become: yes
-  task:
+  tasks:
     - name: update all packages
       ansible.builtin.dnf:
         name: "*"
