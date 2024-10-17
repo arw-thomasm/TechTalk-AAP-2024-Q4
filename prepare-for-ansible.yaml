@@ -3,8 +3,8 @@
 	hosts: all
 	become: yes
 	tasks:
-		- name: ensure ansible user is configured
-		  ansible.builtin.user:
+    - name: ensure ansible user is configured
+      ansible.builtin.user:
 			  name: ansible
     		append: yes
     		state: present
