@@ -1,0 +1,10 @@
+---
+- name: update all packages
+  hosts: all
+  become: yes
+  task:
+    - name: update all packages
+      ansible.builtin.dnf:
+        name: "*"
+        state: updated
+
