@@ -1,6 +1,6 @@
 ---
 - name: prepare hosts for being automated by ansible
-	hosts: all
+  hosts: all
 	become: yes
 	tasks:
     - name: ensure ansible user is configured
