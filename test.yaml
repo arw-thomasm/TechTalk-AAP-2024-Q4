@@ -1,7 +1,8 @@
 ---
-hosts: all
-tasks: 
-  - name: Einfach Debug-Ausgabe
-    ansible.builtin.debug:
-      msg: Ansible Autmation Platform ist die beste Automatisierungsplattform der Welt.
+- name: my first test playbook
+  hosts: all
+  tasks: 
+    - name: Einfache Debug-Ausgabe
+      ansible.builtin.debug:
+        msg: Ansible Autmation Platform ist die beste Automatisierungsplattform der Welt.
         
